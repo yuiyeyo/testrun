@@ -260,12 +260,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function submitForm() {
     var formData = {
-        Name: document.getElementById("Name").value,
-        Age: document.getElementById("Age").value,
-        Email: document.getElementById("Email").value,
-        City: document.getElementById("City").value,
-        Duration: document.getElementById("Duration").value,
-        Comments: document.getElementById("Comments").value
+        Name: document.getElementById("name").value,
+        Age: document.getElementById("age").value,
+        Email: document.getElementById("email").value,
+        City: document.getElementById("city").value,
+        Duration: document.getElementById("duration").value,
+        Comments: document.getElementById("comments").value
     };
 
     // Make an HTTP POST request to your Google Sheets script
