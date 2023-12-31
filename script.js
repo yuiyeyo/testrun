@@ -259,11 +259,31 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function submitForm() {
-  // Perform any additional actions or validations here
+    var formData = {
+        Name: document.getElementById("Name").value,
+        Age: document.getElementById("Age").value,
+        Email: document.getElementById("Email").value,
+        City: document.getElementById("City").value,
+        Duration: document.getElementById("Duration").value,
+        Comments: document.getElementById("Comments").value
+    };
 
-  // Display popup message
-  alert("Your review has been submitted!");
-
-  // Optionally, reset the form
-  document.getElementById("myForm").reset();
+    // Make an HTTP POST request to your Google Sheets script
+    fetch('https://script.google.com/macros/s/AKfycbyVTSJZJRAEjK1_5-rpYIEXCU1sVYfJzjvaA_DYQe6HwnFYH0Zy4sThNfEh3hS1FgR8/exec', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        alert('Your review has been submitted!');
+        document.getElementById("myForm").reset(); // Reset the form
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
 }
