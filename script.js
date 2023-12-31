@@ -290,3 +290,31 @@ function submitForm() {
         console.error('There has been a problem with your fetch operation:', error);
     });
 }
+
+
+
+
+let reviewIndex = 0;
+
+function showReviews() {
+  let reviews = document.getElementsByClassName("reviewisi");
+
+  for (let i = 0; i < reviews.length; i++) {
+    reviews[i].style.display = "none";
+  }
+
+  reviews[reviewIndex].style.display = "block";
+}
+
+function plusReview(n) {
+  reviewIndex += n;
+  if (reviewIndex < 0) {
+    reviewIndex = 0;
+  } else if (reviewIndex >= document.getElementsByClassName("reviewisi").length) {
+    reviewIndex = document.getElementsByClassName("reviewisi").length - 1;
+  }
+  showReviews();
+}
+
+// Initial display
+showReviews();
