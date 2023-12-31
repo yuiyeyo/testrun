@@ -607,34 +607,50 @@ gmp-map {
 }
 
 
-.reviewslideshow-container {
-  max-width: 400px;
-  position: relative;
-  margin: auto;
-}
-
-.reviewslide {
-  display: none;
-  text-align: center;
-}
-
-.prev, .next {
+.reviews-container {
+  max-width: 50%;
+  height:250px;
   position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  background-color: #333;
-  border: none;
-  cursor: pointer;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
 }
 
-.prev { left: 0; }
-.next { right: 0; }
+.formcontainer
+{
+  top:25%;
+  position: absolute;
+}
 
+/* Style for each slide (textbox) */
+.reviewisi {
+  display: none;
+  border: 2px solid #000; /* Border color */
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Navigation buttons style (optional) */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 30%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: #000; /* Button background color */
+}
+
+.prev{
+  left:0;
+}
+
+.next {
+  right: 0;
+}
 
 label {
     width: 30 vw; 
@@ -708,16 +724,5 @@ textarea {
     top:0vh;
   }
 
-  .prev-btn{
-    left: 5%;
-     top: 35%;
-    font-size: 10px;
-   } 
-  
-  .next-btn {
-    left: 95%;
-     top: 35%;
-    font-size: 10px;
-   }
 
 }
