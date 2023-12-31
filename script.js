@@ -282,6 +282,9 @@ function submitForm() {
         }
         alert('Your review has been submitted!');
         document.getElementById("myForm").reset(); // Reset the form
+
+        // Redirect to the original HTML page or any other desired location
+        window.location.href = 'index.html';
     })
     .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
