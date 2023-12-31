@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <title>LOVENDER</title>
+   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/favicon-32x32.png">
+</head>
+<body>
+
+  <header style="position: relative; text-align: center;" id="home">
+     <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/silhouette.png" style="opacity: 0.3; width: 100%; position: absolute; bottom:0; left: 50%; transform: translateX(-50%);">
+      <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Family%20Villa%20%26%20Self%20Photo%20logo%20transparant_putih.png" alt="Lovender Family Villa" style="width: 40%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+  </header>
+
+  
+  <div class="burgermenu-button" onclick="toggleMenu()" id="burgerButton">
+    <span class="material-symbols-outlined" style="color:#EFEAE6; transform: translate(0%, 25%);">menu</span>
+  </div>
+
+  <div class="burgermenu-overlay" id="menuOverlay">
+    <div class="menu-item" onclick="scrollToSection('home')">Home</div>
+    <p></p>
+    <div class="menu-item" onclick="scrollToSection('facilities')">Facilities</div>
+    <p></p>
+    <div class="menu-item" onclick="scrollToSection('rooms')">Rooms</div>
+    <p></p>
+    <div class="menu-item" onclick="scrollToSection('review')">Reviews</div>
+    <p></p>
+    <div class="menu-item" onclick="scrollToSection('rates')">Rates</div>
+    <p></p>
+    <div class="menu-item" onclick="navigateTo('policies')">Policies</div>
+    <p></p>
+    <div class="menu-item" onclick="scrollToSection('contact')">Contact</div>
+</div>
+  
+  <nav id="sticky-menu">
+    <a href="#home">HOME</a>
+    <a href="#facilities">FACILITIES</a>
+    <a href="#rooms">ROOMS</a>
+    <a href="#review">REVIEWS</a>
+    <a href="#rates">RATES</a>
+    <a href="policies.html">POLICY</a>
+    <a href="#contact">CONTACT</a>
+    <p></p>
+  </nav>
+
+  <nav class="additional-header" id="addhead"><p><br></p></nav>
+  
+  <div class="content-container">
+    <div class="section-one">
+        <div class="topgallery-container">
+            <div class="topgallery">
+                <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%201.png" alt=" ">
+                <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%202.png" alt=" ">
+              <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%203.png" alt=" ">
+              <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%204.png" alt=" ">
+              <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%205.png" alt=" ">
+              <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%206.png" alt=" ">
+              <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%207.png" alt=" ">
+              <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/top%20gallery/top%208.png" alt=" ">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-two" id="facilities">
+    <p style="
+      text-align: center;
+      font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.5px;"> Fasilitas Kami </p>
+      <p></p>
+      <div class="fasiitas-container">
+        <p>
+        <span class="material-symbols-outlined size-40" style= "position: absolute; left:25%; transform: translateX(-50%);">
+        house
+        </span>
+        <span class="material-symbols-outlined size-40" style= "position: absolute; left:50%; transform: translateX(-50%);">
+        bed
+        </span>
+        <span class="material-symbols-outlined size-40" style= "position: absolute; left:75%; transform: translateX(-50%);">
+        shower
+        </span>
+        </p>
+        <p></p>
+        <p>
+          <span style= " position:absolute; left:25%; top: 160px; transform: translateX(-50%);">Villa 2 Lantai
+            <style>
+              @media only screen and (max-width: 768px) {
+                  span {
+                      font-size: 10px;
+                    max-width: 20vw;
+                      transform: translateX(-50%);
+                  }
+              }
+            </style>
+          </span>
+          <span style= " position:absolute; left: 50%; top: 160px; transform: translateX(-50%);">3 Kamar Tidur
+          </span>
+          <span style= " position:absolute; left:75%; top: 160px; transform: translateX(-50%);">3 Kamar Mandi
+          </span>
+        </p>
+        <p></p>
+        <p>
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:25%; top: 260px; transform: translateX(-50%);">
+          tv_gen
+          </span>
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:50%; top: 260px; transform: translateX(-50%);">
+          tv
+          </span>
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:75%; top: 260px;  transform: translateX(-50%);">
+          skillet_cooktop
+          </span>
+          </p>
+        <p></p>
+        <p>
+          <span style= " position:absolute; left:25%; top: 330px; transform: translateX(-50%);">Smart TV 70 inch<br>(Ruang Tamu)
+          </span>
+          <span style= " position:absolute; left: 50%; top: 330px; transform: translateX(-50%);">TV 50 inch<br>(Ruang Keluarga)
+          </span>
+          <span style= " position:absolute; left:75%; top: 330px; transform: translateX(-50%);">Dapur Lengkap
+          </span>
+        </p>
+        <p></p>
+        <p>
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:25%; top: 430px; transform: translateX(-50%);">
+          directions_car
+          </span>
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:50%; top: 430px; transform: translateX(-50%);">
+          breakfast_dining
+          </span>
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:75%; top: 430px;  transform: translateX(-50%);">
+          bed
+          </span>
+          </p>
+        <p></p>
+        <p>
+          <span style= " position:absolute; left:25%; top: 500px; transform: translateX(-50%); max-width:auto;">Carport 2 Mobil
+          </span>
+          <span style= "position:absolute; left: 50%; top: 500px; transform: translateX(-50%); max-width:auto;">Free Breakfast <br> (8 pax)
+          </span>
+          <span style= " position:absolute; left:75%; top: 500px; transform: translateX(-50%); max-width:auto;">Free Extra Queen Bed<br>(Ruang Keluarga)
+         </span>
+        </p>
+  <p></p>
+        <p>
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:25%; top: 600px; transform: translateX(-50%);">
+          wifi
+          </span>
+      
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:50%; top: 600px; transform: translateX(-50%);">
+            water_drop
+          </span>
+
+          <span class="material-symbols-outlined size-40" style= "position: absolute; left:75%; top: 600px;  transform: translateX(-50%);">
+            emoji_food_beverage
+          </span>
+          </p>
+        <p></p>
+        <p>
+          <span style= " position:absolute; left:25%; top: 670px; transform: translateX(-50%); ">Free Wifi
+          </span>
+          <span style= "position:absolute; left: 50%; top: 670px; transform: translateX(-50%);">Free Air Minum <br> (Gallon)
+          </span>
+          <span style= " position:absolute; left:75%; top: 670px; transform: translateX(-50%); ">Free Coffee and Tea
+          </span>
+        </p>
+        <p></p>
+        <p>
+          <span class="additional-icons">
+          <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/additional%20icons/youtube.png"  style= "position: absolute; left:25%; top: 770px; transform: translateX(-50%);">
+          </span>
+          
+            <span class="additional-icons">
+              <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/additional%20icons/Netflix.png" style= "position: absolute; left:50%; top: 770px; transform: translateX(-50%);">
+            
+            </span>
+          
+            <span class="additional-icons">
+          <img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/additional%20icons/spotify.png" style= "position: absolute; left:75%; top:770px; transform: translateX(-50%);">
+          </span>
+            
+          </p>
+        <p></p>
+        <p>
+          <span style= " position:absolute; left:25%; top: 840px; transform: translateX(-50%);">Free Youtube Premium
+					</span>
+          <span style= "position:absolute; left: 50%; top: 840px; transform: translateX(-50%);">Free Netflix
+					</span>
+          <span style= " position:absolute; left:75%; top: 840px; transform: translateX(-50%);">Free Spotify Premium
+					</span>
+        </p>
+      </div>
+    </div>
+    <div class="section-three" id="rooms">
+      <div class="slideshow-container">
+
+        
+        <span class="living-room-text">LIVING ROOM</span>
+         <span class="overlay-box" style="position: absolute; left: 0; top: 80%; width: 100vw; height: 68px; background-color: #000; z-index: 3; opacity: 0.5">
+           <style>
+             @media only screen and (max-width: 768px) {
+                 .overlay-box {
+                   display: none;
+                 }
+             }
+           </style>
+         </span>
+        <span class="living-room">
+          <a data-fancybox="living-room-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%201.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%201.png" alt="Ruang Tamu (Sisi 1)" style="position: absolute; left: 0%; top: 0; "></a>
+          <a data-fancybox="living-room-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%202.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%202.png" alt="Ruang Tamu (Sisi 2)" style="position: absolute; left: 0%; top: 0; "></a>
+          <a data-fancybox="living-room-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%203.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%203.png" alt="Ruang Tamu (Sisi 3)" style="position: absolute; left: 0%; top: 0;"></a>
+          <a data-fancybox="living-room-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%204.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Living%20Room/Living%20Room%204.png" alt="Ruang Tamu (Sisi 4)" style="position: absolute; left: 0; top: 0;"></a>
+        </span>
+
+        <span class="dining-room-text">
+          DINING ROOM
+        </span>
+         <span class="overlay-box" style="position: absolute; left: 33%; top: 80%; width: 100vw; height: 68px; background-color: #000; z-index: 3; opacity: 0.5"></span>
+        <span class="dining-room">
+          <a data-fancybox="dining-room-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Dining%20Room/Dining%20Room%201.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Dining%20Room/Dining%20Room%201.png" alt="Ruang Makan (Sisi 1)" style="position: absolute; left: 33%; top: 0;"></a>
+          <a data-fancybox="dining-room-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Dining%20Room/Dining%20Room%202.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Dining%20Room/Dining%20Room%202.png" alt="Ruang Makan (Sisi 2)" style="position: absolute; left: 33%; top: 0;"></a>
+        </span>
+        <span class="gazebo-text">
+          BACKYARD GAZEBO
+        </span>
+         <span class="overlay-box" style="position: absolute; right: 0%; top: 80%; width: 0vw; height: 68px; background-color: #000; z-index: 3; opacity: 0.5"></span>
+        <span class="gazebo">
+          <a data-fancybox="gazebo-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Gazebo/Gazebo%201.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Gazebo/Gazebo%201.png" alt="Gazebo (Sisi 1)" style="position: absolute; right:0%; top: 0%; top:0;"></a>
+          <a data-fancybox="gazebo-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Gazebo/Gazebo%202.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Gazebo/Gazebo%202.png" alt="Gazebo (Sisi 2)" style="position: absolute; right:0%; top: 0;"></a>
+          <a data-fancybox="gazebo-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Gazebo/Gazebo%203.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/Gazebo/Gazebo%203.png" alt="Gazebo (Sisi 3)" style="position: absolute; right: 0%; top: 0;"></a>
+        </span>
+    </div>
+      <div class="slideshow-container">
+        <span class="famroom-text">
+          FAMILY ROOM (2ND FLOOR)
+        </span>
+         <span class="overlay-box" style="position: absolute; left: 0; top: 80%; width: 100vw; height: 68px; background-color: #000; z-index: 3; opacity: 0.5"></span>
+        <span class="famroom">
+          <a data-fancybox="famroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%201.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%201.png" alt="Ruang Keluarga (Sisi 1)" style="position: absolute; left: 0; top: 0;"></a>
+          <a data-fancybox="famroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%202.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%202.png" alt="Ruang Keluarga (Sisi 2)" style="position: absolute; left: 0; top: 0;"></a>
+          <a data-fancybox="famroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%203.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%203.png" alt="Ruang Keluarga (Sisi 3)"style="position: absolute; left: 0; top: 0;"></a>
+          <a data-fancybox="famroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%204.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%204.png" alt="Ruang Keluarga (Sisi 4)" style="position: absolute; left: 0; top: 0;"></a>
+          <a data-fancybox="famroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%205.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/2nd%20floor/2nd%20floor%205.png" alt="Ruang Keluarga (Sisi 5)" style="position: absolute; left: 0; top: 0;"></a>
+        </span>
+      </div>
+      <div class="slideshow-container">
+          <span class="bedroom-text">
+            BEDROOM
+          </span>
+           <span class="overlay-box" style="position: absolute; left: 0; top: 75%; width: 100vw; height: 68px; background-color: #000; z-index: 3; opacity: 0.5"></span>
+          <span class="bedroom">
+            <a data-fancybox="bedroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bedroom/bedroom%201.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bedroom/bedroom%201.png" alt="Ruang Tidur (Sisi 1)" style="position: absolute; left: 0; top: 0;"></a>
+            <a data-fancybox="bedroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bedroom/bedroom%202.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bedroom/bedroom%202.png" alt="Ruang Tidur (Sisi 2)" style="position: absolute; left: 0; top: 0;"></a>
+          </span>
+          <span class="bathroom-text">
+            BATHROOM
+          </span>
+           <span class="overlay-box" style="position: absolute; right: 66%; top: 75%; width: 100vw; height: 68px; background-color: #000; z-index: 3; opacity: 0.5"></span>
+          <span class="bathroom">
+            <a data-fancybox="bathroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bathroom/bathroom%201.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bathroom/bathroom%201.png" alt="Kamar Mandi (Sisi 1)" style="position: absolute; left: 66%; top: 0;"></a>
+            <a data-fancybox="bathroom-gallery" href="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bathroom/bathroom%202.png"><img src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/bathroom/bathroom%202.png" alt="Kamar Mandi (Sisi 2)" style="position: absolute; left: 66%; top: 0;"></a>
+          </span>
+      </div>
+  </div>
+    <div class="section-four">
+      <p></p>
+      <h1 style="text-align: center;">Tentang Kami</h1>
+      <p></p>
+      <p>Lovender Family Villa & Self Photo Studio adalah <em>villa untuk keluarga/family/friends dengan style Bali yang asri, yang juga menyediakan layanan studio self-photo yang dapat digunakan untuk self portrait bersama keluarga.</em></p> 
+
+      <p>Terletak di lokasi yang sangat strategis di <em>utara kota Bandung, sangat dekat dengan Lembang sebagai lokasi wisata utama di Bandung</em>, namun juga tidak jauh dari kota Bandung, khususnya wilayah Dago, Cihampelas, Setiabudi dan sekitarnya.</p>
+      
+      <p>Banyak tujuan wisata yang mudah dicapai dari Family Villa Lovender, misalnya <em>The Great Asia Africa, Floating Market, Lembang Park & Zoo, Farm House Susu Lembang, Rumah Mode, Orchid Forest, Fairy Garden, Tangkuban Perahu, PVJ Mall, Viphassana Graha Theravada Temple,</em> dll.</p>
+
+      <p>Lokasi yang stategis serta fasilitas yang disediakan membuat Lovender Family Villa & Self Photo menjadi tempat yang <strong>sangat nyaman untuk stay bersama keluarga dan sahabat menikmati udara sejuk kota Bandung.</strong> Anda juga dapat mengabadikan kebersamaan bersama keluarga dan sahabat tercinta dengan berfoto bersama di <strong>studio foto dengan konsep self-photo</strong> yang sangat menyenangkan dan bebas berekspresi dengan kualitas foto standar studio.</p>
+    </div>
+  <div class="section-five" id="location">
+    <gmp-map center="-6.85459041595459,107.58319091796875" zoom="14" map-id="Lovender_Map">
+      <gmp-advanced-marker position="-6.85459041595459,107.58319091796875" title="Lovender">
+      </gmp-advanced-marker>
+    </gmp-map>
+  </div>
+  <div class="section-six" id="review">
+    <div class="review">
+      <p></p>
+        <h2>Reviews</h2>
+        <!--<h2> Have you Stayed with us? Tell us What You Think!</h2>-->
+        <div class="review-container">
+          
+          <div class="reviewslideshow-container">
+            <div class="reviewslide"></div>
+            <div class="reviewslide"></div>
+            <div class="reviewslide"></div>
+
+            <button class="prev" onclick="changeReviewSlide(-1)">❮</button>
+            <button class="next" onclick="changeReviewSlide(1)">❯</button>
+          </div>
+          
+          <div>
+
+          <form action="https://script.google.com/macros/s/AKfycbxz_z6zugw4MFcgkNBp4YXw7zvVSXK3BT5W0Kq4yziWYyhLdx4ZAcKx5KRkfj9Ms4kU/exec" method="POST" style="text-align: left; top: 30%" onsubmit="submitForm(); return false;">
+
+              <!-- Add your form fields here -->
+
+              <label for="Name">Your Name:</label><br>
+              <input type="text" id="name" name="Name" required><br>
+
+             <label for="Age">Your Age (optional):</label><br>
+              <input type="number" id="age" name="Age" min="1" max="100" ><br>
+
+            <label for="Email">Email (optional):</label><br>
+            <input type="email" id="email" name="Email"><br>
+
+              <label for="City">Your City:</label><br>
+              <input type="text" id="city" name="City" required><br>
+
+              <label for="Duration">Duration of Stay (nights):</label><br>
+              <input type="number" id="duration" name="Duration" min="1" required><br><br>
+
+              <label for="Comments">Your Comments and Reviews:</label><br>
+              <textarea name="Comments" placeholder="Enter your message" rows="10" cols="10" required></textarea>
+            
+
+              <!-- Add more fields as needed -->
+              <br>
+              <input type="submit" value="Submit" >
+
+
+          </form>
+        </div>
+          <div><!--<h2> Have you Stayed with us? Tell us What You Think!</h2>-->
+            <h2 style="position: absolute; text-align: center; top:25%; right:10%"> Have you Stayed with us?<br>Tell us What You Think!</h2></div>
+          <br>
+          <!--<h2>Have you stayed with us? Tell us what you think!</h2>-->
+        </div>
+
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+<div class="section-seven" id="rates">
+<p style="font-size: 40; font-weight: 900;">OUR RATES</p>
+  <p><strong>Weekdays:</strong> Rp 2.500.000 (2D1N)</p>
+  <p><strong>Weekends:</strong> Rp 3.000.000 (2D1N)</p>
+  <p><strong>Periode 24 - 26 Des:</strong> Rp 3.500.000 (2D1N)</p>
+  <p><strong>Periode 30 Des - 1 Jan:</strong> Rp 4.000.000 (2D1N)</p>
+  <p></p>
+  <p><strong>Check-in:</strong> paling cepat jam 14.00 WIB</p>
+  <p><strong>Check-out:</strong> paling lambat jam 12.00 WIB</p>
+</div>
+  <div class="section-eight" id="contact">
+    <p style="font-size: 20; font-weight: 700;">CONTACT US</p>
+    <whatsapp-button phone="8123753178" dialcode="62" text="hey there!" label="Start Chat"></whatsapp-button>
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/628123753178" "> <img alt="Chat on WhatsApp" src="https://raw.githubusercontent.com/yuiyeyo/Lovender/main/lovender%20asset/WhatsAppButtonGreenMedium.png"style="max-width:40vw;"></a>
+      <p>08123753178 (Rosi-Owner)</p>
+  </div>
+
+    <footer>
+      <!-- Footer content goes here -->
+    </footer>
+    <script src="script.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6mv23tBZp1jvcGF51ldilvm_eWgnUay4&callback=console.debug&libraries=maps,marker&v=beta">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  </body>
+</html>
