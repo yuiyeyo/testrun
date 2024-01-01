@@ -258,63 +258,16 @@ document.addEventListener("DOMContentLoaded", function() {
     window.onscroll = handleScroll;
 });
 
-function submitForm() {
-    var formData = {
-        Name: document.getElementById("name").value,
-        Age: document.getElementById("age").value,
-        Email: document.getElementById("email").value,
-        City: document.getElementById("city").value,
-        Duration: document.getElementById("duration").value,
-        Comments: document.getElementById("comments").value
-    };
 
-    // Make an HTTP POST request to your Google Sheets script
-    fetch('https://script.google.com/macros/s/AKfycbyVTSJZJRAEjK1_5-rpYIEXCU1sVYfJzjvaA_DYQe6HwnFYH0Zy4sThNfEh3hS1FgR8/exec', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+
+$(document).ready(function () {
+    $("[data-fancybox='room-gallery']").fancybox({
+        loop: true,
+        thumbs: {
+            autoStart: true,
         },
-        body: new URLSearchParams(formData),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        alert('Your review has been submitted!');
-        document.getElementById("myForm").reset(); // Reset the form
-
-        // Redirect to the original HTML page or any other desired location
-        window.location.href = 'index.html';
-    })
-    .catch(error => {
-        console.error('There has been a problem with your fetch operation:', error);
+        caption: function(instance, current) {
+            return $(current.opts.$orig).attr('alt');
+        },
     });
-}
-
-
-
-
-let reviewIndex = 0;
-
-function showReviews() {
-  let reviews = document.getElementsByClassName("reviewisi");
-
-  for (let i = 0; i < reviews.length; i++) {
-    reviews[i].style.display = "none";
-  }
-
-  reviews[reviewIndex].style.display = "block";
-}
-
-function plusReview(n) {
-  reviewIndex += n;
-  if (reviewIndex < 0) {
-    reviewIndex = 0;
-  } else if (reviewIndex >= document.getElementsByClassName("reviewisi").length) {
-    reviewIndex = document.getElementsByClassName("reviewisi").length - 1;
-  }
-  showReviews();
-}
-
-// Initial display
-showReviews();
+});
